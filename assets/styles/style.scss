@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+$Desktop: 840px;
+$belowDesktop: 697px;
+$animation-duration: 2s;
+$main_background_color:#e9e9e9;
+$darker_main_background_color:#d2d2d2;
+$accent_color:#383838;
+$default_padding:1% 3% 1%;
+$default_radius:0.5rem;
+$padding:0.8%;
+
+@mixin desktop {
+  @media (min-width:#{$Desktop}) {
+    @content;
+  }
+}
+@mixin belowdesktop {
+  @media (min-width:#{$belowDesktop}) {
+    @content;
+  }
+}
+// @mixin hero_btn($accent_color,$padding,$default_radius){
+//   padding:$accent_color;
+//   border-radius: $default_radius;
+//   background-color: $accent_color;
+// }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header_parent {
+  background-color: $main_background_color;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+
+  font-family: apercu, sans-serif;
+  padding: $default_padding;
+  .accent_information {
+    width: 100%;
+    .filter_section {
+      background-color: $darker_main_background_color;
+      border-radius: 0.5rem;
+      padding: $padding;
+      width: 70%;
+    }
+  }
+  .contact_cta {
+    width: 15%;
+    padding:$padding;
+    border-radius: 0.5rem;
+    background-color: $accent_color;
+    cursor: pointer;
+  }
+}
+
+.hero {
+
+  padding: $default_padding;
+  h1 {
+    font-size: 16px;
+    font-size: 9vw;
+    color: $accent_color;
+    margin: 0;
+    padding: 0;
+
+  }
+}
+
+.ads {
+    width: 100%;
+    padding: $default_padding;
+    marquee{
+      color: $accent_color;
+    }
+  .hero_illustration {
+    position: relative;
+    img {
+      width: 100%;
+      height: 80dvh;
+      border-radius: 0.5rem;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      transition: background-color 0.6s ease;
+    }
+
+    figcaption{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: end;
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem;
+        // background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0) 100%), url('../multimedia/unluck-your-digital-soul-through-web-development-and-graphics-design\ \(6\).png');
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0) 100%);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        .ad_cta_btn{
+          position: absolute;
+          padding: 1.5%;
+          border-radius: 0.5rem;
+          background-color:transparent;
+          border: 1px solid #fff;
+          color: #fff;
+          cursor: pointer;
+          top: 50%;
+          left: 50%;
+          transform:translate(-50%, -50%)
+        }
+        h2{
+            /* font-family: 'Ubuntu Condensed', sans-serif; */
+            font-size:5.5rem;
+            font-weight: 500;
+            width: 50%; 
+        }
+    }
+
+  }
+}
+
+
+  /* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+  
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* text switching animation */
+
+
+.switchi {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  animation: switcher 6s infinite ease-in-out;
+  min-width: 100%;
+  margin: auto;
+
+  &:nth-child(1) {
+    animation-delay: -7s;
+  }
+
+  &:nth-child(2) {
+    animation-delay: -6s;
+  }
+
+  &:nth-child(3) {
+    animation-delay: -5s;
+  }
+}
+
+@keyframes switcher {
+  0%, 5%, 100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+
+  50%, 80% {
+    filter: blur(180px);
+    opacity: 0;
+  }
+}
