@@ -16,6 +16,13 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script type="module" src="./assets/scripts/script.mjs" defer></script>
     <title>GN Dezyns</title>
   </head>
@@ -54,109 +61,192 @@
         </header>
         <!-- header section end-->
 
-        <!-- ==== hero section ==== -->
-        <section class="hero text-center">
-          <!-- <h1 class="font-bold uppercase">the soul of design</h1> -->
-        </section>
-        <!-- ==== hero section end ==== -->
-
-        <!-- ==== ads section ==== -->
-        <div class="ads">
-          <figure class="hero_illustration">
-            <img
-              src="./assets/multimedia/third unlock.png"
-              alt=""
-              class="fade"
-            />
-
-            <figcaption class="ads_ilustration">
-              <a
-                href="javascript:void(0)"
-                class="capitalize ad_cta_btn text-2xl hidden"
-                >order now</a
-              >
-              <h2 class="text-white capitalize">
-                <!-- <span class="">Explore</span> -->
-                <span class="switchi">world where</span>
-                <span class="switchi">creativity</span>
-                <span class="switchi">meets purpose</span>
-              </h2>
-            </figcaption>
-          </figure>
-
-          <figure class="hero_illustration">
-            <img
-              src="./assets/multimedia/second unlock.png"
-              alt=""
-              class="fade"
-            />
-
-            <figcaption class="ads_ilustration">
-              <a
-                href="javascript:void(0)"
-                class="capitalize ad_cta_btn text-2xl hidden"
-                >order now</a
-              >
-              <h2 class="text-white capitalize capitalize">
-                <span class="switchi">50% off</span>
-                <span class="switchi">Sales</span>
-              </h2>
-            </figcaption>
-          </figure>
-
-          <figure class="hero_illustration">
-            <img
-              src="./assets/multimedia/unluck-your-digital-soul-through-web-development-and-graphics-design (6).png"
-              alt=""
-              class="fade"
-            />
-
-            <figcaption class="ads_ilustration">
-              <a
-                href="javascript:void(0)"
-                class="capitalize ad_cta_btn text-2xl hidden"
-                >order now</a
-              >
-              <h2 class="text-white capitalize capitalize">
-                <!-- your brand our story -->
-                <!--                 <span class="">your brand</span>
-                <span class="">our story</span> -->
-                <span class="switchi">every line,</span>
-                <span class="switchi">color, and curve</span>
-                <span class="switchi">tells a story.</span>
-              </h2>
-            </figcaption>
-          </figure>
-
-          <marquee behavior="" direction="" class="uppercase p-2 lg:text-2xl"
-            >offer of the day -
-            <span class="font-bold">50% discount</span> offer lasts till
-            <span class="font-bold">15th january 2024</span>- offer of the day -
-            <span class="font-bold">50% discount</span> offer lasts till
-            <span class="font-bold">15th january 2024</span>- offer of the day -
-            <span class="font-bold">50% discount</span> offer lasts till
-            <span class="font-bold">15th january 2024</span>- offer of the day -
-            <span class="font-bold">50% discount</span> offer lasts till
-            <span class="font-bold">15th january 2024</span>- offer of the day -
-            <span class="font-bold">50% discount</span> offer lasts till
-            <span class="font-bold">15th january 2024</span>-
-          </marquee>
+        <!--        <div class="cursor"></div>
+        <div class="hand">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+            <defs>
+              <style>
+                .cls-4 {
+                  fill: #f6fafd;
+                }
+                .cls-6 {
+                  fill: #ae2d4c;
+                }
+                .cls-7 {
+                  fill: #cf4054;
+                }
+                .cls-10 {
+                  fill: #fbb40a;
+                }
+              </style>
+            </defs>
+            <g id="_13-love" data-name="13-love">
+              <circle cx="24" cy="24" r="23" style="fill: #ffce52" />
+              <path
+                d="M24 4c12.15 0 22 8.507 22 19h.975a23 23 0 0 0-45.95 0H2C2 12.507 11.85 4 24 4z"
+                style="fill: #ffe369"
+              />
+              <path
+                d="M46 23c0 10.493-9.85 19-22 19S2 33.493 2 23h-.975c-.014.332-.025.665-.025 1a23 23 0 0 0 46 0c0-.335-.011-.668-.025-1z"
+                style="fill: #ffb32b"
+              />
+              <ellipse
+                class="cls-4"
+                cx="37"
+                cy="9"
+                rx=".825"
+                ry="1.148"
+                transform="rotate(-45.02 37 9)"
+              />
+              <ellipse
+                class="cls-4"
+                cx="30.746"
+                cy="4.5"
+                rx=".413"
+                ry=".574"
+                transform="rotate(-45.02 30.745 4.5)"
+              />
+              <ellipse
+                class="cls-4"
+                cx="34"
+                cy="7"
+                rx="1.65"
+                ry="2.297"
+                transform="rotate(-45.02 34 7)"
+              />
+              <path
+                d="M34 39c0-2.76-4.47-5-10-5s-10 2.24-10 5l-.1.13A10.727 10.727 0 0 1 9 30.15 2.025 2.025 0 0 1 10.87 28c1.88 1.08 6.39 1 13.13 1s11.25.08 13.12-1A2.026 2.026 0 0 1 39 30.15a10.727 10.727 0 0 1-4.9 8.98z"
+                style="fill: #273941"
+              />
+              <path
+                class="cls-6"
+                d="m34 39 .1.13A17.882 17.882 0 0 1 24 42a17.882 17.882 0 0 1-10.1-2.87L14 39c0-2.76 4.47-5 10-5s10 2.24 10 5z"
+              />
+              <path
+                class="cls-7"
+                d="M16.5 9a4.465 4.465 0 0 1 4.5 4.8C21 21 13.5 25 12 25c-.72 0-8.38-3.7-8.97-10.39Q3 14.205 3 13.8a4.451 4.451 0 0 1 3.58-4.7A4.053 4.053 0 0 1 7.5 9c2.25 0 3.75 1.6 4.5 4 .75-2.4 2.25-4 4.5-4zM45 13.8q0 .4-.03.81C44.44 21.3 37.44 25 36 25c-.75 0-9-4-9-11.2A4.465 4.465 0 0 1 31.5 9c2.25 0 3.75 1.6 4.5 4 .75-2.4 2.25-4 4.5-4a4.053 4.053 0 0 1 .92.1A4.451 4.451 0 0 1 45 13.8z"
+              />
+              <path
+                d="M10.87 30c1.88 1.08 6.39 1 13.13 1s11.25.08 13.12-1a1.926 1.926 0 0 1 1.793 1.536A11.043 11.043 0 0 0 39 30.15 2.026 2.026 0 0 0 37.12 28c-1.87 1.08-6.38 1-13.12 1s-11.25.08-13.13-1A2.025 2.025 0 0 0 9 30.15a11.015 11.015 0 0 0 .087 1.385A1.92 1.92 0 0 1 10.87 30z"
+                style="fill: #141e21"
+              />
+              <path
+                d="M33.531 37.486A18.171 18.171 0 0 1 24 40a18.171 18.171 0 0 1-9.531-2.514A2.809 2.809 0 0 0 14 39l-.1.13A17.882 17.882 0 0 0 24 42a17.882 17.882 0 0 0 10.1-2.87L34 39a2.809 2.809 0 0 0-.469-1.514z"
+                style="fill: #8a293d"
+              />
+              <path
+                class="cls-10"
+                d="M36 25c-.71 0-8.131-3.59-8.921-10.081A6 6 0 0 0 27 15.8C27 23 35.25 27 36 27c1.44 0 8.44-3.7 8.97-10.39q.03-.41.03-.81a6.079 6.079 0 0 0-.07-.907C44.225 21.4 37.419 25 36 25zM12 25c-.71 0-8.131-3.59-8.921-10.081A6 6 0 0 0 3 15.8C3 23 11.25 27 12 27c1.44 0 8.44-3.7 8.97-10.39q.03-.41.03-.81a6.079 6.079 0 0 0-.07-.907C20.225 21.4 13.419 25 12 25z"
+              />
+              <path
+                class="cls-6"
+                d="M40.5 9c-2.25 0-3.75 1.6-4.5 4 .583-1.8 1.75-3 3.5-3a3.408 3.408 0 0 1 3.5 3.6c0 5.4-5.833 8.4-7 8.4-.56 0-6.518-2.775-6.977-7.793A8.167 8.167 0 0 1 29 13.6a3.366 3.366 0 0 1 2.784-3.525A3.243 3.243 0 0 1 32.5 10c1.75 0 2.917 1.2 3.5 3-.75-2.4-2.25-4-4.5-4a4.053 4.053 0 0 0-.92.1A4.451 4.451 0 0 0 27 13.8q0 .4.03.81C27.62 21.3 35.28 25 36 25c1.5 0 9-4 9-11.2A4.465 4.465 0 0 0 40.5 9zM16.5 9c-2.25 0-3.75 1.6-4.5 4 .583-1.8 1.75-3 3.5-3a3.408 3.408 0 0 1 3.5 3.6c0 5.4-5.833 8.4-7 8.4-.56 0-6.518-2.775-6.977-7.793A8.25 8.25 0 0 1 5 13.6a3.366 3.366 0 0 1 2.784-3.525A3.243 3.243 0 0 1 8.5 10c1.75 0 2.917 1.2 3.5 3-.75-2.4-2.25-4-4.5-4a4.053 4.053 0 0 0-.92.1A4.451 4.451 0 0 0 3 13.8q0 .4.03.81C3.62 21.3 11.28 25 12 25c1.5 0 9-4 9-11.2A4.465 4.465 0 0 0 16.5 9z"
+              />
+              <ellipse
+                class="cls-4"
+                cx="42"
+                cy="13"
+                rx=".825"
+                ry="1.148"
+                transform="rotate(-45.02 41.999 13)"
+              />
+              <ellipse
+                class="cls-4"
+                cx="40.746"
+                cy="11.5"
+                rx=".413"
+                ry=".574"
+                transform="rotate(-45.02 40.746 11.5)"
+              />
+              <ellipse
+                class="cls-4"
+                cx="18"
+                cy="13"
+                rx=".825"
+                ry="1.148"
+                transform="rotate(-45.02 18 13)"
+              />
+              <ellipse
+                class="cls-4"
+                cx="16.746"
+                cy="11.5"
+                rx=".413"
+                ry=".574"
+                transform="rotate(-45.02 16.745 11.5)"
+              />
+            </g>
+          </svg>
+        </div> -->
+        <!-- hero card -->
+        <div class="hero_card">
+          <section class="flex flex-col lg:flex-row-reverse banner" data-tilt>
+            <figure>
+              <img src="./assets/multimedia/panda.png" alt="" />
+              <figcaption class="font-extrabold font-mono">
+                <!-- <p class="uppercase font-extrabold gn">G</p> -->
+                <!-- <p class="uppercase font-extrabold d">D</p> -->
+                <!--            <span>G</span><span>N</span><span>D</span><span>e</span
+                ><span>z</span><span>y</span><span>n</span><span>s</span> -->
+              </figcaption>
+            </figure>
+            <article class="p-2 lg:p-10">
+              <h1 class="text-3xl lg:text-7xl font-bold">GN Dezyns Branding</h1>
+              <p class="mt-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium obcaecati, consequuntur, deleniti esse expedita.
+              </p>
+              <div class="mt-6 btn_projects flex items-center gap-1">
+                <a href="javascript:void(0)" class="capitalize font-bold"
+                  >view projects</a
+                >
+                <img src="./assets/multimedia/right-arrow.png" alt="" />
+              </div>
+            </article>
+          </section>
         </div>
-        <!-- ads end -->
-
-        <!-- brand -->
-        <span class="brand_logo">
-          <img src="./assets/multimedia/Logo2.png" alt="" />
-          <!--           <h1 class="text-2xl hover:underline font-bold mobile_hide">
-            Gn Dezyns <sup>©</sup>
-          </h1> -->
-        </span>
-        <!-- brand ends-->
+        <!-- hero card ends-->
       </div>
 
       <section class="about_us_parent">
         <!-- ==== About us ==== -->
-        <div class="about_us justify-between gap-5">
+        <div class="about_us">
+          <section class="about_card illustration_bg_one">
+            <article class="flex-col flex justify-between p-4 lg:p-12">
+              <p class="capitalize text-white">Branding</p>
+              <h1 class="text-2xl lg:text-5xl font-bold text-white">
+                At GN Dezyns, we define success with your distinctive brand
+                strategy.
+              </h1>
+              <div class="">
+                <a href="javascript:void(0)" class="capitalize"
+                  >Elevate Your Brand</a
+                >
+              </div>
+
+              <!-- offest the flex -->
+              <div></div>
+              <!-- offest the flex -->
+            </article>
+          </section>
+
+          <section class="about_card illustration_bg_two">
+            <article class="flex-col flex justify-between p-4 lg:p-12">
+              <p class="capitalize text-white">Collaborative Approach</p>
+              <h1 class="text-2xl lg:text-5xl font-bold text-white">
+                Shaping success through distinctive brand strategies is our
+                expertise.
+              </h1>
+              <div class="">
+                <a href="javascript:void(0)" class="capitalize"
+                  >Elevate Your Brand</a
+                >
+              </div>
+              <!-- offest the flex -->
+              <div></div>
+              <!-- offest the flex -->
+            </article>
+          </section>
+
           <section class="about_card illustration_bg_one">
             <article class="flex-col flex justify-between p-4 lg:p-12">
               <p class="capitalize text-white">Branding</p>
@@ -197,6 +287,69 @@
         <!-- ==== About ends === -->
       </section>
 
+      <!-- ==== design portfolio ==== -->
+      <section class="design_portfolio text-center">
+        <div class="portfolio_headers inline-block text-center">
+          <p>latest</p>
+          <div class="accent_information">
+            <h1 class="text-6xl capitalize lg:text-9xl">designs</h1>
+            <p class="alert capitalize">cool dezyns!</p>
+          </div>
+        </div>
+
+        <section class="projects">
+          <div class="design_display">
+            <img src="./assets/multimedia/company_profile.jpg" alt="" />
+          </div>
+          <div class="design_display">
+            <img src="./assets/multimedia/logo_design_1.jpg" alt="" />
+          </div>
+          <div class="design_display">
+            <img src="./assets/multimedia/logo_design_2.jpg" alt="" />
+          </div>
+          <div class="design_display">
+            <img src="./assets/multimedia/logo_design_3.jpg" alt="" />
+          </div>
+          <div class="design_display">
+            <img src="./assets/multimedia/company_profile.jpg" alt="" />
+          </div>
+          <div class="design_display">
+            <img src="./assets/multimedia/logo_design_1.jpg" alt="" />
+          </div>
+          <div class="design_display">
+            <img src="./assets/multimedia/logo_design_2.jpg" alt="" />
+          </div>
+          <div class="design_display">
+            <img src="./assets/multimedia/logo_design_3.jpg" alt="" />
+          </div>
+        </section>
+      </section>
+
+      <!-- ==== design portfolio ==== -->
+
+      <!-- ==== WEB PROJECTS DSPLAY SECTION ==== -->
+      <div class="web_projects">
+        <header>
+          <small class="capitalize text-2xl">collections</small>
+          <h1 class="text-6xl capitalize">explore a wide variety of collections</h1>
+        </header>
+        <div class="web_projects_main flex justify-between gap-10">
+          <div class="web_project">
+            <img src="./assets/multimedia/web_dev1.jpg" alt="">
+          </div>
+          <div class="web_project">
+            <img src="./assets/multimedia/web_project2.jpg" alt="">
+          </div>
+          <div class="web_project">
+            <img src="./assets/multimedia/web_project3.jpg" alt="">
+          </div>
+          <div class="web_project">
+            <img src="./assets/multimedia/web_project2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- ==== WEB PROJECTS DSPLAY SECTION ==== -->
+
       <!-- ==== navigation ==== -->
       <div class="navigation flex justify-center">
         <nav class="flex p-2">
@@ -214,5 +367,103 @@
       </div>
       <!-- ==== navigation ends ==== -->
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js"
+      integrity="sha512-14AZ/DxUrlF26z6v7egDkpJHKyJRn/7ue2BgpWZ/fmqrqVzf4PrQnToy99sHmKwzKev/VZ1tjPxusuTV/n8CcQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script src="./assets/scripts/components/tilt/tilt.query.js"></script> -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".banner").tilt({
+          scale: 1,
+        });
+      });
+
+      $(function () {
+        $(".web_projects_main").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          prevArrow:
+            "<span class='prev_arrow_logo rounded-full'><i class='fa-solid fa-angle-left'></i></span>",
+          nextArrow:
+            "<span class='next_arrow_logo rounded-full'><i class='fa-solid fa-chevron-right'></i></span>",
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                // dots: true
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+
+      $(function () {
+        $(".about_us").slick({
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          prevArrow:
+            "<span class='priv_arrow rounded-full'><i class='fa-solid fa-angle-left'></i></span>",
+          nextArrow:
+            "<span class='next_arrow rounded-full'><i class='fa-solid fa-chevron-right'></i></span>",
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                // dots: true
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
   </body>
 </html>
